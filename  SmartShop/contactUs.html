@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="hebrew">
+<head>
+    <meta charset="utf-8" />
+    <title>צרו קשר</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:100,400,800&subset=hebrew" rel="stylesheet">    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="photos/logo.png">
+
+    <!-- JS -->
+    <script src="jScripts/JavaScript.js"></script>
+</head>
+
+<!--דף זה יכיל את טופס הצור קשר-->
+<body>
+    <!-- תפריט נווט האתר -->
+    <header >
+        <nav id="navbar" style="background-image: url(photos/nav.png);" aria-label="nav_bar">
+            <ul>
+                <li class="smaller"><a href="index.html"><img src="photos/logo2.png" id="navlogo"></a></li>
+                
+                <li>
+                    <a  href="#">רגע לפני</a>
+                    <ul class="dropbtn">
+                        <li><a href="prosandcons.html">יתרונות וחסרונות</a></li>
+                        <li><a href="customs.html">מכס</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">קונים נכון</a>
+                    <ul class="dropbtn">
+                        <li><a href="#"  class="disabled">איך קונים נכון</a></li>
+                        <li><a href="#" class="disabled">איך לחסוך </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">קצת טיפים</a>
+                    <ul class="dropbtn">
+                        <li><a href="#"  class="disabled">טיפים לקניית בגדים</a></li>
+                        <li><a href="#" class="disabled">טיפים לקנית אוכל</a></li>
+                        <li><a href="#" class="disabled">טיפים לאבטחת מידע</a></li>
+                    </ul>
+                </li>
+                <li class="bigger"> | </li>
+                <li class="smaller"><a href="about.html" >אודות</a></li>
+                <li class="smaller"><a href="contactUs.html" >צור קשר</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <!-- פירורי לחם -->
+        <ul class="breadcrumb">
+            <br/>
+            <li><a href="index.html">דף הבית</a></li>
+            <li>צור קשר</li>
+        </ul>
+
+        <header id="headerTitel">
+            <h2> צרו קשר  </h2>
+            <p id="secondheader">
+                <br/>
+                לשאלות נוספות, מלאו את הפרטים ונחזור אליכם בהקדם
+                <br/> <br/>
+                * שדה חובה
+            </p>
+        </header>
+
+        <section id="formsection">
+            <form id="contactForm" onsubmit="return checkform(this)" >
+                <input type="hidden" id="myemail" name="name" value="lirikatanov@gmail.com"/>
+                
+                <label for="fname" id="fname">
+                    <h3>* שם פרטי:</h3>
+                    <input type="text" class="fname" name="firstname" placeholder="שמך הפרטי..">
+                </label>
+
+               
+                <label for="lname" id="lname">
+                    <h3>* שם משפחה:</h3>
+                    <input type="text" class="lname" name="lastname" placeholder="שם משפחתך..">
+                </label>
+                
+                
+                <label for="gender" id="gender">
+                    <h3>* מגדר:</h3><br/>
+                    <input type="radio" id="man" value="זכר" name="gender"> זכר <br/>
+                    <input type="radio" id="woman" value="נקבה" name="gender"> נקבה <br/>
+                    <input type="radio" id="dontWont" value="לא מעוניין לציין" name="gender"> לא מעוניין לציין
+                </label>
+
+                
+                <label for="bdate" id="bdate">
+                    <h3>* תאריך לידה: </h3>
+                    <select name="day" >
+                        <option value="0"> יום </option>
+                        <option value="1"> 1    </option>
+                        <option value="2"> 2    </option>
+                        <option value="3"> 3    </option>
+                        <option value="4"> 4    </option>
+                        <option value="5"> 5    </option>
+                        <option value="6"> 6    </option>
+                        <option value="7"> 7    </option>
+                        <option value="8"> 8    </option>
+                        <option value="9"> 9    </option>
+                        <option value="10"> 10  </option>
+                        <option value="11"> 11  </option>
+                        <option value="12"> 12  </option>
+                        <option value="13"> 13  </option>
+                        <option value="14"> 14  </option>
+                        <option value="15"> 15  </option>
+                        <option value="16"> 16  </option>
+                        <option value="17"> 17  </option>
+                        <option value="18"> 18  </option>
+                        <option value="19"> 19  </option>
+                        <option value="20"> 20  </option>
+                        <option value="21"> 21  </option>
+                        <option value="22"> 22  </option>
+                        <option value="23"> 23  </option>
+                        <option value="24"> 24  </option>
+                        <option value="25"> 25  </option>
+                        <option value="26"> 26  </option>
+                        <option value="27"> 27  </option>
+                        <option value="28"> 28  </option>
+                        <option value="29"> 29  </option>
+                        <option value="30"> 30  </option>
+                        <option value="31"> 31  </option>
+                    </select> 
+                
+                    <select name="month" >
+                        <option value="0"> חודש     </option>
+                        <option value="1"> ינואר    </option>
+                        <option value="2"> פבואר    </option>
+                        <option value="3"> מרץ      </option>
+                        <option value="4"> אפריל    </option>
+                        <option value="5"> מאי      </option>
+                        <option value="6"> יוני     </option>
+                        <option value="7"> יולי     </option>
+                        <option value="8"> אוגוסט   </option>
+                        <option value="9"> ספטמבר   </option>
+                        <option value="10"> אוקטובר </option>
+                        <option value="11"> נובמבר  </option>
+                        <option value="12"> דצמבר   </option>
+                    </select> 
+                    
+                    <select name="year" >
+                
+                    <option value="0"> שנה      </option>
+                    <option value="1990"> 1990  </option>
+                    <option value="1991"> 1991  </option>
+                    <option value="1992"> 1992  </option>
+                    <option value="1993"> 1993  </option>
+                    <option value="1994"> 1994  </option>
+                    <option value="1995"> 1995  </option>
+                    <option value="1996"> 1996  </option>
+                    <option value="1997"> 1997  </option>
+                    <option value="1998"> 1998  </option>
+                    <option value="1999"> 1999  </option>
+                    <option value="2000"> 2000  </option>
+                    <option value="2001"> 2001  </option>
+                    <option value="2002"> 2002  </option>
+                    <option value="2003"> 2003  </option>
+                    <option value="2004"> 2004  </option>
+                    <option value="2005"> 2005  </option>
+                    <option value="2006"> 2006  </option>
+                    <option value="2007"> 2007  </option>
+                    <option value="2008"> 2008  </option>
+                    <option value="2009"> 2009  </option>
+                    <option value="2010"> 2010  </option>
+                    <option value="2011"> 2011  </option>
+                    <option value="2012"> 2012  </option>
+                    <option value="2013"> 2013  </option>
+                    <option value="2014"> 2014  </option>
+                    <option value="2015"> 2015  </option>
+                    <option value="2016"> 2016  </option>
+                    </select> 
+                </label>
+                
+                <label for="phone" id="phone">
+                    <h3>* מספר טלפון:</h3>
+                    <input name="phone" class="phone" type="text" maxlength="7"  />
+                    <select name="kidomet">
+                        <option value="0"> קידומת  </option>
+                        <option value="050"> 050    </option>
+                        <option value="051"> 051    </option>
+                        <option value="052"> 052    </option>
+                        <option value="053"> 053    </option>
+                        <option value="054"> 054    </option>
+                        <option value="055"> 055    </option>
+                        <option value="056"> 056    </option>
+                        <option value="057"> 057    </option>
+                        <option value="058"> 058    </option>
+                    </select>
+                </label>
+                
+                
+                <label for="email" id="email">
+                    <h3>* אימייל:</h3>
+                    <input name="email" type="text" placeholder="אימייל..."/>
+                </label>
+
+                <label for="addtext">
+                     <h3>מה תרצו לשאול?</h3>
+                    <textarea rows="5" cols="20" class="textarea1" alt="מקום לכתיבת טקסט"></textarea>
+                </label>
+                
+                <label for="conditions"><input name="conditions" type="checkbox" checked="checked"  />  מסכים לתנאי האתר </label>
+                <br/> <br/>
+                <label for="send" id="sendform"><input type="submit" class="formBottoms" value="שלח את הטופס" alt="כפתור שליחת הטופס"></label>
+                <label for="rest"><input type="reset" class="formBottoms" class="reset1" value="נקה את הטופס" alt="כפתור ניקוי הטופס"></label>
+
+                <div id="feedback"></div>
+            </form>
+        </section>
+    </section>
+
+    <!-- תפריט תחתון -->
+    <footer id="footNav" >
+        <br/>
+        <p>
+            פותח על ידי : לירי קטנוב וספיר פז<br/>
+        </p>
+        <br/>
+        <p>
+            <a href="siteMap.html">מפת האתר</a> |
+            <a href="about.html" >אודות</a> |
+            <a href="contactUs.html" >צור קשר</a>
+        </p>
+        <br/>
+        <div class="footer-text">
+            <p>
+                במסגרת פרוייקט לקורס "פיתוח אתרי אינטרנט" בשנה א', תשפ"ב. <br />
+                האתר אופיין ועוצב לפי עקרונות של "עיצוב ממשק" ופותח ב HTML5 ו- CSS3
+            </p><br />
+        </div>
+    </footer>
+</body>
+</html>
