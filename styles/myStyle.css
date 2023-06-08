@@ -3,7 +3,7 @@ body {  direction: rtl;  margin:  0 auto; font-size: 1.2vw;}
 p{  font-family: 'Heebo', sans-serif; font-size: 1.2vw;}
 input{  font-family: 'Heebo', sans-serif;}
 label{  font-family: 'Heebo', sans-serif;}
-.main{  margin: 1%;}
+.main{  margin: 5% 1%; 0 0}
 .cursor { cursor: pointer;}
 
 a{
