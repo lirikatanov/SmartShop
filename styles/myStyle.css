@@ -1,5 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
-body { width:1280; direction: rtl;  margin:  0 auto; font-size: 1.2vw;}
+body { width:1280 px; direction: rtl;  margin:  0 auto; font-size: 1.2vw;}
 p{  font-family: 'Heebo', sans-serif; font-size: 1.2vw;}
 input{  font-family: 'Heebo', sans-serif;}
 label{  font-family: 'Heebo', sans-serif;}
